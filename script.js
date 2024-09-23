@@ -1,5 +1,5 @@
 function init() {
-    document.getElementById("questionsQty").innerHTML = questions.length;
+    document.getElementById("questionsQty").innerHTML = ` / ${questions.length}`;
     showQuestion()
 }
 

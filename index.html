@@ -9,12 +9,6 @@
     <title>QuizApp</title>
 </head>
 <body onload="init()">
-    
-    <!-- <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">QuizApp</span>
-        </div>
-    </nav> -->
     <div class="container">
         <div class="card quiz-card">
             <h2 id="titleQuizApp">QuizApp</h2>
@@ -37,7 +31,9 @@
                 
                 <div class="question-footer">
                     <span id="try">0</span>
-                    <span><b id="currentQuestion">1</b> / <b id="questionsQty">5</b></span>
+                    <div class="questionNo">
+                        <span id="currentQuestion"></span> <span id="questionsQty"></span>
+                    </div>
                     <button id="next" onclick="showQuestion()" class="btn btn-outline-secondary">
                         <img src="./img/arrowRight.png" alt="Pfeil nach rechts">
                     </button>
