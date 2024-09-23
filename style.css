@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(26, 2, 22) !important;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    top: 5%;
+    background-color: rgb(26, 2, 22)  !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+}
+
+.quiz-card {
+    width: 30rem;
+    margin: 20px 0;
+    position: relative;
+}
+
+#titleQuizApp {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.card-body {
+    position: relative;
+}
+
+.question-answer {
+    background-color: rgb(26, 2, 22);
+
+    & h5 {
+        color: white;
+        height: 50px;
+    }
+}
+
+#next {
+    &:hover {
+        background-color: rgba(244, 193, 235, 0.05);
+    }
+}
+
+#next img {
+    width: 25px;
+    height: 25px;
+}
+
+.answer-option {
+    box-shadow: 0 0 5px rgb(26, 2, 22) inset;
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    background-color: white;
+    margin: 12px auto;
+    padding: 5px 10px;
+    color: black;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: rgba(220, 180, 214, 0.75);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: rgba(220, 180, 214, 0.5);
+        cursor: pointer;
+    }
+}
+
+.rightAnswerStyle {
+    border: 1px solid rgb(1, 81, 1);
+    box-shadow: 0 0 10px rgb(1, 81, 1) inset;
+    background-color: rgba(151, 246, 151, 0.75);
+    pointer-events: none;
+    cursor: default;
+}
+
+.wrongAnswerStyle {
+    border: 1px solid rgb(91, 0, 0);
+    box-shadow: 0 0 10px rgb(91, 0, 0) inset;
+    background-color: rgba(249, 107, 107, 0.75);
+    pointer-events: none;
+    cursor: default;
+}
+
+.question-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 30px;
+    padding-top: 12px;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: white !important;
+    --bs-btn-border-color: rgba(255, 255, 255, 0.5) !important;
+    --bs-btn-hover-bg: rgb(26, 2, 22) !important;
+    --bs-btn-hover-border-color: rgba(255, 255, 255, 0.5) !important;
+    --bs-btn-active-bg: rgb(38, 4, 32) !important;
+    --bs-btn-active-border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.gameFinish {
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    text-shadow: 0 0 5px black;
+    color: white;
+    bottom: 70px;
+    left: 0;
+    height: 370px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 30px rgb(26, 2, 22) inset;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    &:nth-child(1) {
+        padding-bottom: 100px;
+    }
+    transition: all 0.2s ease-in-out;
+}
