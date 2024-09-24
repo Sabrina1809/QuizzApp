@@ -13,6 +13,7 @@ let answers = [
 ]
 
 function showQuestion() {
+    showPercentProgress()
     document.getElementById("currentQuestion").innerHTML = currentQuestion + 1;
     document.getElementById("question").textContent = questions[currentQuestion].question;
     document.getElementById("next").style.boxShadow = "none";
@@ -36,6 +37,14 @@ function showQuestion() {
 function rightAnswer() {
     let rightId = `answer-${questions[currentQuestion].right_answer}`
     document.getElementById(rightId).classList.add("rightAnswer");
+}
+
+function showPercentProgress() {
+
+    let percent = Number((document.getElementById("currentQuestion").innerHTML / questions.length) * 100);
+    console.log(percent)
+    document.getElementById("progress-bar").style.width = `${percent}%`;
+    document.getElementById("progress-bar").innerHTML = `${percent.toFixed(0)}%`;
 }
 
 let tryCount = 0;
@@ -68,6 +77,8 @@ function lastQuestion() {
     document.getElementById("next").innerHTML = `
       <img src="./img/restartPink.png" alt="Neustart" class="backToStart" onclick="reloadPage()" >`
     document.getElementById("finishOverlay").innerHTML = `<div class="gameFinish"><span id="">GESCHAFFT</span><span id="">${tryCount + 1} Versuche</span></div>`
+    document.getElementById("progress-bar").style.width = `100%`;
+    document.getElementById("progress-bar").innerHTML = `100%`;
 }
 
 function reloadPage() {

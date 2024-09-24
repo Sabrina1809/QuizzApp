@@ -7,6 +7,10 @@ body {
     font-size: 14px;
 }
 
+.card {
+    --bs-card-bg: transparent !important;
+}
+
 .container {
     top: 5%;
     background-color: rgb(26, 2, 22)  !important;
@@ -29,6 +33,18 @@ body {
     border: 0.5px solid rgba(255, 255, 255, 0.15) !important;
     border: 0.5px solid black !important;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.progress {
+    margin-top: 10px;
+    background-color: rgb(185, 165, 165) !important;
+
+}
+
+.progress-bar {
+    font-size: 10px;
+    --bs-progress-bar-bg: rgb(88, 49, 82);
+    --bs-progress-bg: transparent !important;
 }
 
 #titleQuizApp {
