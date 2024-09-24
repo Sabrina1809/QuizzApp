@@ -25,21 +25,13 @@
             <div id="finishOverlay"></div>
             <div id="card-body" class="card-body question-answer">
                 <h5 id="question" class="card-title">Frage</h5>
-                <div onclick="checkAnswer(event)" id="answer-1" class="answer-option">
-                    Antwort
-                </div>
-                <div onclick="checkAnswer(event)" id="answer-2" class="answer-option">
-                    Antwort
-                </div>
-                <div onclick="checkAnswer(event)" id="answer-3" class="answer-option">
-                    Antwort
-                </div>
-                <div onclick="checkAnswer(event)" id="answer-4" class="answer-option">
-                    Antwort
-                </div>
+                <div onclick="checkAnswer(event)" id="answer-1" class="answer-option"></div>
+                <div onclick="checkAnswer(event)" id="answer-2" class="answer-option"></div>
+                <div onclick="checkAnswer(event)" id="answer-3" class="answer-option"></div>
+                <div onclick="checkAnswer(event)" id="answer-4" class="answer-option"></div>
                 
                 <div class="question-footer">
-                    <span id="try">0</span>
+                    <span id="try"></span>
                     <div class="questionNo">
                         <span id="currentQuestion"></span> <span id="questionsQty"></span>
                     </div>
@@ -48,11 +40,8 @@
                     </button>
                 </div>
             </div>
-           
         </div>
-       
     </div>
-    
     <script src="script.js"></script>
     <script src="questions_db.js"></script>
 </body>
