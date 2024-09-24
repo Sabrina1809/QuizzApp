@@ -35,6 +35,32 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }
 
+.quiz-header {
+    position: relative;
+}
+
+#volume {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    z-index: 20;
+    & img {
+        width: 20px;
+        height: 20px;
+    }
+    &:hover {
+        cursor: pointer;
+        background-image: radial-gradient(rgba(177, 137, 171,0.25) 50%, transparent);
+        border: 0.5px solid rgba(177, 137, 171,0.25);
+        border-radius: 5px;
+    }
+}
+
 .progress {
     margin-top: 10px;
     background-color: rgb(185, 165, 165) !important;
