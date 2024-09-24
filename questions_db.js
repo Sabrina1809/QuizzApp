@@ -1,164 +1,162 @@
 const questions = [
-    {
-      question: "Was ist das Grundgerüst eines HTML-Dokuments?",
-      answer_1: `"<!DOCTYPE html>"`,
-      answer_2: "<html><head><title></title></head><body></body></html>",
-      answer_3: "<html><body></body></html>",
-      answer_4: "<!DOCTYPE html><html></html>",
-      right_answer: 2
-    },
-    {
-      question: "Wie definiert man eine Klasse in CSS?",
-      answer_1: ".classname { }",
-      answer_2: "#classname { }",
-      answer_3: "classname { }",
-      answer_4: ".classname = { }",
-      right_answer: 1
-    },
-    {
-      question: "Welches Attribut in HTML wird verwendet, um ein Bild zu definieren?",
-      answer_1: "src",
-      answer_2: "href",
-      answer_3: "alt",
-      answer_4: "link",
-      right_answer: 1
-    },
-    {
-      question: "Welches HTML-Tag wird verwendet, um ein Formular zu erstellen?",
-      answer_1: "<form>",
-      answer_2: "<input>",
-      answer_3: "<textarea>",
-      answer_4: "<select>",
-      right_answer: 1
-    },
-    {
-      question: "Was ist das Ergebnis von 2 + '2' in JavaScript?",
-      answer_1: "4",
-      answer_2: "'22'",
-      answer_3: "undefined",
-      answer_4: "'4'",
-      right_answer: 2
-    },
-    {
-      question: "Wie greift man in JavaScript auf ein HTML-Element per ID zu?",
-      answer_1: "document.getElementById()",
-      answer_2: "document.querySelector()",
-      answer_3: "document.getElementByClass()",
-      answer_4: "document.findById()",
-      right_answer: 1
-    },
-    {
-      question: "Welches CSS-Attribut ändert die Hintergrundfarbe eines Elements?",
-      answer_1: "background-image",
-      answer_2: "background-color",
-      answer_3: "color",
-      answer_4: "background-style",
-      right_answer: 2
-    },
-    {
-      question: "Wie kommentiert man eine Zeile in CSS?",
-      answer_1: "// Kommentar",
-      answer_2: "/* Kommentar */",
-      answer_3: "<!-- Kommentar -->",
-      answer_4: "-- Kommentar",
-      right_answer: 2
-    },
-    {
-      question: "Wie fügt man ein JavaScript in eine HTML-Seite ein?",
-      answer_1: "<js>",
-      answer_2: "<script>",
-      answer_3: "<javascript>",
-      answer_4: "<code>",
-      right_answer: 2
-    },
-    {
-      question: "Welches Attribut fügt in einem <img>-Tag einen Alternativtext hinzu?",
-      answer_1: "src",
-      answer_2: "alt",
-      answer_3: "title",
-      answer_4: "description",
-      right_answer: 2
-    },
-    {
-      question: "Welches HTML-Tag wird verwendet, um den Titel einer Webseite festzulegen?",
-      answer_1: "<head>",
-      answer_2: "<meta>",
-      answer_3: "<title>",
-      answer_4: "<header>",
-      right_answer: 3
-    },
-    {
-      question: "Wie lautet das Schlüsselwort zum Erstellen einer Funktion in JavaScript?",
-      answer_1: "function",
-      answer_2: "func",
-      answer_3: "method",
-      answer_4: "define",
-      right_answer: 1
-    },
-    {
-      question: "Wie selektiert man alle <p>-Elemente in CSS?",
-      answer_1: "#p",
-      answer_2: ".p",
-      answer_3: "p",
-      answer_4: "*p",
-      right_answer: 3
-    },
-    {
-      question: "Was macht 'box-sizing: border-box' in CSS?",
-      answer_1: "Ermöglicht das Styling der Ränder",
-      answer_2: "Schließt Padding und Border in die Breite und Höhe ein",
-      answer_3: "Setzt die Box in eine Border",
-      answer_4: "Ändert die Größe des Inhalts auf Basis der Border",
-      right_answer: 2
-    },
-    {
-      question: "Was ist der Unterschied zwischen '==' und '===' in JavaScript?",
-      answer_1: "'==' überprüft nur den Wert, '===' überprüft Wert und Typ",
-      answer_2: "Es gibt keinen Unterschied",
-      answer_3: "'==' überprüft Wert und Typ, '===' überprüft nur den Wert",
-      answer_4: "'===' wird in neueren JavaScript-Versionen nicht mehr verwendet",
-      right_answer: 1
-    },
-    {
-      question: "Was wird bei folgendem Code ausgegeben: console.log(typeof null);?",
-      answer_1: "'null'",
-      answer_2: "'undefined'",
-      answer_3: "'object'",
-      answer_4: "'number'",
-      right_answer: 3
-    },
-    {
-      question: "Welches HTML-Attribut wird verwendet, um einen Hyperlink zu definieren?",
-      answer_1: "href",
-      answer_2: "src",
-      answer_3: "link",
-      answer_4: "alt",
-      right_answer: 1
-    },
-    {
-      question: "Was wird bei folgendem Code ausgegeben?\n\nfunction outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    console.log(count);\n  }\n}\nconst fn = outer();\nfn();\nfn();",
-      answer_1: "0, 0",
-      answer_2: "1, 1",
-      answer_3: "1, 2",
-      answer_4: "undefined, undefined",
-      right_answer: 3
-    },
-    {
-      question: "Wie bindet man eine externe CSS-Datei in HTML ein?",
-      answer_1: "<style src='style.css'>",
-      answer_2: "<link href='style.css' rel='stylesheet'>",
-      answer_3: "<script src='style.css'>",
-      answer_4: "<css link='style.css'>",
-      right_answer: 2
-    },
-    {
-      question: "Wie definiert man eine Schleife in JavaScript, die 5-mal durchläuft?",
-      answer_1: "for (let i = 1; i <= 5; i++)",
-      answer_2: "while (i <= 5) { i++ }",
-      answer_3: "do { i++ } while (i <= 5)",
-      answer_4: "repeat (5) { }",
-      right_answer: 1
-    }
-  ];
-
-  
+  {
+    question: "Welches HTML-Element wird verwendet, um einen Link zu erstellen?",
+    answer_1: "<a>",
+    answer_2: "<link>",
+    answer_3: "<href>",
+    answer_4: "<url>",
+    right_answer: 1
+  },
+  {
+    question: "Was bedeutet 'defer' im Zusammenhang mit einem <script>-Tag?",
+    answer_1: "Das Script wird asynchron geladen und vor dem DOM-Parsing ausgeführt",
+    answer_2: "Das Script wird synchron geladen und ausgeführt",
+    answer_3: "Das Script wird asynchron geladen und nach dem DOM-Parsing ausgeführt",
+    answer_4: "Das Script wird parallel geladen und sofort ausgeführt",
+    right_answer: 3
+  },
+  {
+    question: "Wie definiert man eine JavaScript-Klasse?",
+    answer_1: "class MyClass { constructor() { } }",
+    answer_2: "function MyClass() { }",
+    answer_3: "defineClass MyClass() { }",
+    answer_4: "class() MyClass { constructor() { } }",
+    right_answer: 1
+  },
+  {
+    question: "Was bedeutet 'this' in einer JavaScript-Funktion?",
+    answer_1: "Referenz auf das globale Objekt",
+    answer_2: "Referenz auf das Element, das die Funktion aufgerufen hat",
+    answer_3: "Referenz auf das aktuelle Dokument",
+    answer_4: "Referenz auf den nächsten Funktionsaufruf",
+    right_answer: 2
+  },
+  {
+    question: "Wie verhält sich 'const' in JavaScript?",
+    answer_1: "Die Variable kann neu zugewiesen werden, aber nicht neu definiert",
+    answer_2: "Die Variable kann weder neu zugewiesen noch neu definiert werden",
+    answer_3: "Die Variable kann neu definiert, aber nicht neu zugewiesen werden",
+    answer_4: "Die Variable kann nur innerhalb eines Blocks neu zugewiesen werden",
+    right_answer: 2
+  },
+  {
+    question: "Wie kann man in CSS eine Flexbox-Container erstellen?",
+    answer_1: "display: block;",
+    answer_2: "display: grid;",
+    answer_3: "display: inline-flex;",
+    answer_4: "display: flex;",
+    right_answer: 4
+  },
+  {
+    question: "Was ist der Unterschied zwischen 'const' und 'let' in JavaScript?",
+    answer_1: "'const' erlaubt keine Neuinitialisierung, 'let' schon",
+    answer_2: "'let' gilt nur in Schleifen, 'const' ist global",
+    answer_3: "'const' ist funktional, 'let' ist blockbezogen",
+    answer_4: "Es gibt keinen Unterschied",
+    right_answer: 1
+  },
+  {
+    question: "Was wird bei folgendem Code ausgegeben?\n\nlet x = 1;\nif (true) {\n  let x = 2;\n  console.log(x);\n}\nconsole.log(x);",
+    answer_1: "1, 1",
+    answer_2: "2, 1",
+    answer_3: "2, 2",
+    answer_4: "1, 2",
+    right_answer: 2
+  },
+  {
+    question: "Was bewirkt 'display: none' in CSS?",
+    answer_1: "Versteckt das Element, aber reserviert Platz",
+    answer_2: "Versteckt das Element komplett, ohne Platz zu reservieren",
+    answer_3: "Macht das Element transparent, aber klickbar",
+    answer_4: "Ändert die Sichtbarkeit, ohne das Layout zu beeinflussen",
+    right_answer: 2
+  },
+  {
+    question: "Wie wird ein Promise in JavaScript erstellt?",
+    answer_1: "new Promise()",
+    answer_2: "promise.create()",
+    answer_3: "createPromise()",
+    answer_4: "new.promise()",
+    right_answer: 1
+  },
+  {
+    question: "Was macht die 'async'-Funktion in JavaScript?",
+    answer_1: "Kennzeichnet eine Funktion als asynchron, wodurch sie ein Promise zurückgibt",
+    answer_2: "Macht den Funktionsaufruf sofort blockierend",
+    answer_3: "Verwandelt alle Rückgabewerte in Promises",
+    answer_4: "Stellt sicher, dass die Funktion synchron ausgeführt wird",
+    right_answer: 1
+  },
+  {
+    question: "Welcher Operator wird verwendet, um 'AND' in JavaScript zu implementieren?",
+    answer_1: "&&",
+    answer_2: "||",
+    answer_3: "&",
+    answer_4: "and()",
+    right_answer: 1
+  },
+  {
+    question: "Welcher Befehl kann verwendet werden, um eine Seite in HTML zu aktualisieren?",
+    answer_1: "location.reload()",
+    answer_2: "window.load()",
+    answer_3: "document.refresh()",
+    answer_4: "page.update()",
+    right_answer: 1
+  },
+  {
+    question: "Wie kann man den ersten Buchstaben eines Strings in JavaScript großschreiben?",
+    answer_1: "str.capitalize()",
+    answer_2: "str[0].toUpperCase() + str.slice(1)",
+    answer_3: "str.firstUpper()",
+    answer_4: "str.upperFirst()",
+    right_answer: 2
+  },
+  {
+    question: "Wie erstellt man eine Medienabfrage in CSS?",
+    answer_1: "@media (min-width: 600px) { }",
+    answer_2: "media-query: screen and (min-width: 600px)",
+    answer_3: "@screen (min-width: 600px) { }",
+    answer_4: "query(media) and (min-width: 600px)",
+    right_answer: 1
+  },
+  {
+    question: "Was gibt 'Array.isArray([1, 2, 3])' in JavaScript zurück?",
+    answer_1: "null",
+    answer_2: "true",
+    answer_3: "false",
+    answer_4: "undefined",
+    right_answer: 2
+  },
+  {
+    question: "Wie entfernt man den ersten Eintrag aus einem Array in JavaScript?",
+    answer_1: "array.pop()",
+    answer_2: "array.shift()",
+    answer_3: "array.removeFirst()",
+    answer_4: "array.delete(0)",
+    right_answer: 2
+  },
+  {
+    question: "Was ist 'event.preventDefault()' in JavaScript?",
+    answer_1: "Verhindert das Standardverhalten eines Events",
+    answer_2: "Bricht die Event-Ausführung ab",
+    answer_3: "Hält die Seite an, bis das Event abgeschlossen ist",
+    answer_4: "Verhindert, dass ein Event an Elternknoten weitergegeben wird",
+    right_answer: 1
+  },
+  {
+    question: "Was macht die CSS-Eigenschaft 'z-index'?",
+    answer_1: "Ändert die horizontale Position eines Elements",
+    answer_2: "Ändert die Stapelreihenfolge von Elementen auf der Z-Achse",
+    answer_3: "Vergrößert die Höhe eines Elements",
+    answer_4: "Definiert die vertikale Reihenfolge eines Elements im Layout",
+    right_answer: 2
+  },
+  {
+    question: "Was ist die richtige Syntax für eine Pfeilfunktion in JavaScript?",
+    answer_1: "let myFunc = (a) => a + 1;",
+    answer_2: "let myFunc = -> (a) a + 1;",
+    answer_3: "function myFunc => a + 1;",
+    answer_4: "myFunc = (a) => return a + 1;",
+    right_answer: 1
+  }
+];
